@@ -1,0 +1,31 @@
+object Form1: TForm1
+  Left = -1
+  Height = 443
+  Top = 174
+  Width = 713
+  Caption = 'Form1'
+  ClientHeight = 443
+  ClientWidth = 713
+  LCLVersion = '2.0.10.0'
+  object Memo1: TMemo
+    Left = 60
+    Height = 190
+    Top = 130
+    Width = 244
+    Lines.Strings = (
+      ''
+    )
+    ScrollBars = ssBoth
+    TabOrder = 0
+    WordWrap = False
+  end
+  object Memo2: TMemo
+    Left = 448
+    Height = 192
+    Top = 128
+    Width = 233
+    ScrollBars = ssBoth
+    TabOrder = 1
+    WordWrap = False
+  end
+end
