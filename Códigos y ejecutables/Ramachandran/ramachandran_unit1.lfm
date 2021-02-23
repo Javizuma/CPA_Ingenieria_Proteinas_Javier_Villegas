@@ -1,0 +1,189 @@
+object Form1: TForm1
+  Left = 15
+  Height = 543
+  Top = 68
+  Width = 1240
+  Caption = 'Form1'
+  ClientHeight = 523
+  ClientWidth = 1240
+  Color = 14335781
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Memo1: TMemo
+    Left = 34
+    Height = 287
+    Top = 57
+    Width = 286
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 328
+    Height = 448
+    Top = 25
+    Width = 248
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+  end
+  object Image1: TImage
+    Left = 584
+    Height = 445
+    Top = 26
+    Width = 648
+  end
+  object Button1: TButton
+    Left = 240
+    Height = 25
+    Top = 32
+    Width = 72
+    Caption = '>>>'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Edit1: TEdit
+    Left = 34
+    Height = 23
+    Top = 32
+    Width = 204
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 216
+    Height = 48
+    Top = 384
+    Width = 96
+    Caption = 'Ramachandran'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Shape1: TShape
+    Left = 34
+    Height = 25
+    Top = 352
+    Width = 33
+    Brush.Color = clYellow
+    OnMouseDown = Shape1MouseDown
+    Shape = stCircle
+  end
+  object Edit2: TEdit
+    Left = 88
+    Height = 23
+    Top = 352
+    Width = 96
+    TabOrder = 5
+    Text = 'Color de pluma'
+  end
+  object Shape2: TShape
+    Left = 34
+    Height = 25
+    Top = 400
+    Width = 33
+    Brush.Color = clYellow
+    OnMouseDown = Shape2MouseDown
+    Shape = stCircle
+  end
+  object Shape3: TShape
+    Left = 32
+    Height = 25
+    Top = 448
+    Width = 33
+    Brush.Color = clBlack
+    OnMouseDown = Shape3MouseDown
+    Shape = stCircle
+  end
+  object Edit3: TEdit
+    Left = 88
+    Height = 23
+    Top = 400
+    Width = 96
+    TabOrder = 6
+    Text = 'Color de relleno'
+  end
+  object Edit4: TEdit
+    Left = 88
+    Height = 23
+    Top = 448
+    Width = 96
+    TabOrder = 7
+    Text = 'Color de fondo'
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 90
+    Top = 126
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=0'
+      'ColorB=80'
+      'ColorC=8000'
+      'ColorD=8080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=FF'
+      'ColorK=FF00'
+      'ColorL=FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 163
+    Top = 213
+  end
+  object MainMenu1: TMainMenu
+    Left = 174
+    Top = 147
+    object MenuItem1: TMenuItem
+      Caption = 'Proteína'
+      object MenuItem2: TMenuItem
+        Caption = 'AbrirPDB'
+        OnClick = Button1Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Cerrar PDB'
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Salir del Programa'
+        OnClick = Salir
+      end
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Cálculos'
+      object MenuItem11: TMenuItem
+        Caption = 'Ramachandran'
+      end
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Configuración'
+      object MenuItem7: TMenuItem
+        Caption = 'Colores'
+        object MenuItem8: TMenuItem
+          Caption = 'Pluma'
+        end
+        object MenuItem9: TMenuItem
+          Caption = 'MenuItem9'
+        end
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Borrar'
+      end
+    end
+  end
+end

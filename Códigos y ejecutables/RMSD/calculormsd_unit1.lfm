@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 55
+  Height = 473
+  Top = 127
+  Width = 792
+  Caption = 'Form1'
+  ClientHeight = 473
+  ClientWidth = 792
+  Color = 9734979
+  LCLVersion = '2.0.10.0'
+  object Button1: TButton
+    Left = 240
+    Height = 25
+    Top = 62
+    Width = 75
+    Caption = '>>>'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 64
+    Width = 224
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 376
+    Top = 88
+    Width = 296
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 2
+    WordWrap = False
+  end
+  object Memo2: TMemo
+    Left = 400
+    Height = 98
+    Top = 128
+    Width = 360
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    WordWrap = False
+  end
+  object Button2: TButton
+    Left = 400
+    Height = 56
+    Top = 56
+    Width = 152
+    Caption = 'Seleccionar Cys'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 400
+    Height = 49
+    Top = 248
+    Width = 144
+    Caption = 'Calcular RMSD'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object Memo3: TMemo
+    Left = 400
+    Height = 122
+    Top = 304
+    Width = 360
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Lines.Strings = (
+      ''
+    )
+    ParentFont = False
+    TabOrder = 6
+    WordWrap = False
+  end
+end
