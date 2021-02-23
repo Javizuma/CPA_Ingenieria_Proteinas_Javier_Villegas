@@ -1,0 +1,92 @@
+object Form1: TForm1
+  Left = 25
+  Height = 655
+  Top = 17
+  Width = 1064
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  Color = 16047976
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Button1: TButton
+    Left = 392
+    Height = 48
+    Top = 24
+    Width = 96
+    Caption = '>>>'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 32
+    Width = 368
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 24
+    Height = 64
+    Top = 328
+    Width = 107
+    Caption = 'Estereodiagrama'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 90
+    Top = 88
+    Width = 150
+    Color = clHotLight
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Image1: TImage
+    Left = 152
+    Height = 475
+    Top = 128
+    Width = 430
+  end
+  object Image2: TImage
+    Left = 624
+    Height = 475
+    Top = 128
+    Width = 430
+  end
+  object Memo2: TMemo
+    Left = 582
+    Height = 473
+    Top = 127
+    Width = 41
+    Color = clWindowFrame
+    TabOrder = 4
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 896
+    Height = 23
+    Top = 32
+    Width = 50
+    MaxValue = 5
+    MinValue = 1
+    TabOrder = 5
+    Value = 1
+  end
+  object Label1: TLabel
+    Left = 512
+    Height = 15
+    Top = 40
+    Width = 358
+    Caption = 'Elige la fenilalanina, Phe, a la que quieres realizar el estereodiagrama'
+    Color = clWindow
+    ParentColor = False
+    Transparent = False
+  end
+end
